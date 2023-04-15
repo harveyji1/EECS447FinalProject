@@ -1,0 +1,26 @@
+table, th, td, tr{
+	border:1px solid;
+}
+
+label.userPass{
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 75px;
+	text-align: right;
+
+}
+
+label.sock{
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 175px;
+	text-align: right;
+
+}
+
+body{
+	background-color: #FFFDD0
+}
+

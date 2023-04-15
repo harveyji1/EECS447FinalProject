@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Jino's Ski Resorts</title>
+	<!--<script src="formChecker.js"></script>-->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<center><h1>Jino's Ski Resorts Customer Login</h1></center>
+	<form name="store" method="POST" action="db.php">
+	<p>Please enter your username and password<p>
+	<label for="username" class="userPass">Username: </label>
+	<input type="email" id="username" name="username" required> <br> <br>
+	<label for="password" class="userPass">Password: </label>
+	<input type="password" id="password" name="password" required> <br> <br>
+
+    <input type="submit" id="subButton" value="Submit">
+	<input type="reset" id="reset" value="Reset">
+    <br><br>
+	<p>Click below for Employee login</p>
+	<input type ="button" id = "employeelogin" value = "Employee Login" onclick="location.href = 'employeeLogin.html';" ><br>
+	</form>
+</body>
+</html>
