@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Profile Page</title>
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="customerFrontend.html" class="logo">JINO SKI RESORTS</a>
+
+            <div class="menu-toggle">&#9776;</div>
+
+            <ul>
+                <li><a href="#">TICKETS</a></li>
+                <li><a href="#">RESORTS</a></li>
+                <li><a href="#">LIFTS</a></li>
+                <li><a href="#">PROFILE</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="img/oreji.jpg" alt="Profile Picture">
+                </div>
+                <div class="profile-details">
+                    <h2>Ore Ji</h2>
+                    <p>ssn: xxx-xx-1234</p>
+                    <ul>
+                        <li><span>Email:</span> oreji69@gmail.com</li>
+                        <li><span>DOB:</span> 4-20-1969</li>
+                        <li><span>Resort:</span> Crested Butte Mountain Resort</li>
+                        <li><span>Ticket ID:</span> 1234</li>
+                        <li><span>Purchased:</span> 2023-02-19 14:26:55</li>
+                        <li><span>Expiration:</span> 2023-08-10</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p align="left">©2023 JINO SKI RESORTS</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html
