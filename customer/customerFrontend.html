@@ -18,7 +18,8 @@
                 <li><a href="#">TICKETS</a></li>
                 <li><a href="#">RESORTS</a></li>
                 <li><a href="#">LIFTS</a></li>
-                <li><a href="#">SIGN IN</a></li>
+                <li><a href="/customerLogin.html">SIGN IN</a></li>
+                <li id="profile" style="display: none;"><a href="#">PROFILE</a></li>
             </ul>
         </div>
     </nav>
@@ -27,7 +28,7 @@
         <section>
             <h2>WELCOME TO JINO SKI RESORTS</h2>
 
-            <p>Welcome to Ski Resort! Our website is your one-stop-shop for all things skiing. 
+            <p>Welcome to Jino Ski Resort! Our website is your one-stop-shop for all things skiing. 
                 Whether you're looking to buy a ticket, explore other ski resorts, or check out our lifts, we've got you covered. 
                 Our site is designed to be easy to navigate and provide you with all the information you need to plan your next ski adventure. 
                 So come on in, take a look around, and get ready to hit the slopes!</p>
@@ -104,10 +105,26 @@
     <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('nav ul');
+        const signInLink = document.querySelector('#profile');
+
+        // Check if user is signed in and update the sign in link
+        if (userIsSignedIn()) {
+            signInLink.href = "profile.html";
+            signInLink.innerText = "PROFILE";
+        } else {
+            signInLink.href = "signin.html";
+            signInLink.innerText = "SIGN IN";
+        }
 
         menuToggle.addEventListener('click', () => {
             nav.classList.toggle('active');
         });
+
+        // Dummy function to check if user is signed in
+        function userIsSignedIn() {
+            // Replace this with your own code to check if the user is signed in
+            return false;
+        }
     </script>
 </body>
 </html>
