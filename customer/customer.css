@@ -12,6 +12,11 @@ body {
     line-height: 1.5;
     color: #333;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 header {
     background-color: #fff;
@@ -23,6 +28,7 @@ nav {
     background-color: #57A0D2;
     position: sticky;
     top: 0;
+    z-index: 1100;
 }
 
 nav .container {
@@ -71,6 +77,7 @@ main {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
+    min-height: calc(100vh - 110px);
 }
 
 section {
@@ -143,16 +150,73 @@ footer {
     margin-top: 20px;
   }
   
-  .lift-search label {
+  .lift-search label[for="resort-select"], label[for="lift-select"] {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
     margin-right: 10px;
   }
+
+  .purchase-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .purchase-form label[for="resort-ticket"], label[for="ticket-type"], label[for="quantity"], label[for="date"] {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+    margin-right: 10px;
+    margin-left: 3px;
+  }
+
+  .purchase-form select {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .purchase-form input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .purchase-form input[type="date"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .purchase-form button[type="submit"] {
+    background-color: #57A0D2;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
   
   .lift-search select {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     margin-right: 10px;
   }
   
-  .lift-search input[type="text"] {
-    width: 300px;
+  .lift-search input {
+    width: 200px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -160,12 +224,13 @@ footer {
   }
   
   .lift-search button[type="submit"] {
-    background-color: #63B8FF;
+    background-color: #46a3ef;
     color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    width: 100px;
   }
 /* Profile */
     .profile {
@@ -215,7 +280,33 @@ footer {
         font-weight: bold;
         margin-right: 10px;
     }
-  
+
+    /* TICKETS */
+    .hero__background__image {
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    @media all and (min-width: 1200px) {
+        .hero__background__image {
+            margin-top: -20px;
+        }
+    }
+    
+    .hero__background__image img {
+        display: block;
+        width: 100%;
+    }
+    button[type=submit] {
+        background-color: #57A0D2;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
   
 
 /* Media Queries */
