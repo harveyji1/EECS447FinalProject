@@ -1,26 +1,104 @@
-table, th, td, tr{
-	border:1px solid;
+@import url(https://fast.fonts.net/cssapi/fa1c3b24-763b-4570-9a73-59dca14c290d.css);@import url(https://fast.fonts.net/cssapi/bf870e93-bf7f-4b29-ac7a-01fada2490c2.css);@import url(https://fast.fonts.net/cssapi/04a84e0f-5570-40a8-a175-558adfd6848f.css);@import url(https://fast.fonts.net/cssapi/b7e71779-932f-49ef-8769-106a0a3b3ceb.css);@import url(https://use.typekit.net/tdf5prc.css);html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
 }
 
-label.userPass{
-	display: inline-block;
-	float: left;
-	clear: left;
-	width: 75px;
-	text-align: right;
-
+* {
+  box-sizing: border-box;
 }
 
-label.sock{
-	display: inline-block;
-	float: left;
-	clear: left;
-	width: 175px;
-	text-align: right;
-
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
 }
 
-body{
-	background-color: #FFFDD0
+.container {
+  width: 600px;
+  margin: 100px auto;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  padding: 50px;
 }
 
+h1 {
+  text-align: center;
+  color: #333333;
+}
+
+label {
+  font-size: 16px;
+  color: #666666;
+}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type=submit] {
+  background-color: #57A0D2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type=customerRedirect] {
+  background-color: #5fa7cd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}  
+
+button[type=employeeRedirect] {
+  background-color: #5fa7cd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type=signupRedirect] {
+  background-color: #63B8FF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type=submit]:hover {
+  background-color: #0096FF;
+}
+
+label input[type=checkbox] {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
