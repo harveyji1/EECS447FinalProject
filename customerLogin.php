@@ -26,6 +26,7 @@ if ($result->num_rows > 0) {
           $_SESSION['email']=$row['EMAIL'];
           $_SESSION['dob']=$row['DOB'];
           $_SESSION['password']=$row['PASSWORD'];
+          $_SESSION['skierid']=$row['SKIERID'];
           $isSuccess=1;
           echo "Login Found";
       }
@@ -45,42 +46,5 @@ if ($isSuccess == 0) {
 }
 
 $mysqli->close();
-    /*session_start();
-    include "db_conn.php";
-
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-    
-    $sql = "SELECT * FROM SKIER WHERE EMAIL = '$email' AND PASSWORD = '$password'";
-    $result = mysqli_query($conn, $sql);
-    $isSuccess=0;
-    if(mysqli_num_rows($result) == 1){
-        echo "Found 1 result";
-        $row = mysqli_fetch_assoc($result);
-        echo $row['EMAIL'];
-        }
-        /*
-        if($row['email'] == $email && $row['password'] == $password){
-            echo "Logged In! Redirecting now...";
-            $_SESSION['email'] = $row['email'];
-            $_SESSION['name'] = $row['name'];
-            $_SESSION['passsword'] = $row['password'];
-            $_SESSION['ssn'] = $row['ssn'];
-            $_SESSION['dob'] = $row['dob'];
-            //header("Location:customer/profile.php");
-            //exit();
-        }
-        
-        else{
-            header("Location:customerLoginPage.php?error=Incorrect User Name or Password");
-            exit();
-        }
-    }
-    else{
-        header("Location:customerLoginPage.php");
-        exit();
-    }
-    */
-
 ?> 
   
