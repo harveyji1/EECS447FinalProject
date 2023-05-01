@@ -9,9 +9,9 @@ if ($mysqli->connect_errno) {
 
 $email = $_POST["email"];
 $queryEmail = "SELECT * FROM SKIER WHERE EMAIL='$email'";
-$resultEmail = $mysqli->query($querySignup);
+$resultEmail = $mysqli->query($queryEmail);
 
-if ($resultEmail->num_rows > 0) {
+if ($resultEmail->num_rows > 0) { //FORMAT THIS PLEASE
 header("Location: signupPage.php?error=Email already being used");
 }
 else{
@@ -32,8 +32,8 @@ else{
     $queryCheck = "SELECT * FROM SKIER WHERE SKIERID = '$newSkierID'";
     $resultCheck = $mysqli->query($queryCheck);
     
-    if($resultCheck->num_rows == 1){
-        echo "Account Created Successfully! Please go back to Log in Page";
+    if($resultCheck->num_rows == 1){ //FORMAT THIS PLEASE
+        echo "<p>Account Created Successfully! Please go back to Log in Page<p>";
     }
 }
 
