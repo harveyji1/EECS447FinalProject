@@ -53,7 +53,7 @@
     
     $queryCheck = "SELECT * FROM TICKETS WHERE TICKETID = '$newTicketID'";
     $resultCheck = $mysqli->query($queryCheck);
-    if($resultCheck->num_rows == 1){
+    if($resultCheck->num_rows == 1){//FORMAT THIS PLEASE
         echo "Purchase was Successful! Check your tickets on the My Tickets page!";
     }
     else{
