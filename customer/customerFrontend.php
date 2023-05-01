@@ -16,7 +16,7 @@
 <body>
     <nav>
         <div class="container">
-            <a href="customerFrontEnd.php" class="logo">JINO SKI RESORTS</a>
+            <a href="customerFrontend.php" class="logo">JINO SKI RESORTS</a>
 
             <div class="menu-toggle">&#9776;</div>
 
