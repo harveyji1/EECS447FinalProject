@@ -34,7 +34,7 @@ label {
   color: #666666;
 }
 
-input[type=email], input[type=password] {
+input[type=email], input[type=password]{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -94,6 +94,11 @@ button[type=submit]:hover {
 
 label input[type=checkbox] {
   margin-top: 16px;
+}
+
+.table-container{
+    max-height: calc(100vh - 230 px);
+    overflow-y: auto;
 }
 
 @media screen and (max-width: 600px) {
