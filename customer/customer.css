@@ -109,7 +109,15 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+    position: relative;
+    margin-top: auto;
 }
+
+.table-container{
+    max-height: calc(100vh - 230 px);
+    overflow-y: auto;
+}
+
 
 /* RESORT PREVIEWS*/
 .resort-container {
