@@ -20,10 +20,10 @@
 
             <ul>
                 <li><a href="myTickets.php">MY TICKETS</a></li>
-                <li><a href="ticket.html">BUY TICKETS</a></li>
-                <li><a href="#">RESORTS</a></li>
+                <li><a href="buyTickets.php">BUY TICKETS</a></li>
+                <li><a href="resortsPage.php">RESORTS</a></li>
                 <li><a href="myLifts.php">MY LIFTS</a></li>
-                <li><a href="#">PROFILE</a></li>
+                <li><a href="profile.php">PROFILE</a></li>
             </ul>
         </div>
     </nav>
@@ -31,7 +31,7 @@
         <div class="container">
             <div class="profile">
                 <div class="profile-image">
-                    <img src="img/oreji.jpg" alt="Profile Picture">
+                    <img src="img/oreji.jpg" alt="Profile Picture"> <!--Change the picture please, other things could use some better formatting as well-->
                 </div>
                 <div class="profile-details">
                     <h2><?php echo $_SESSION['name']; ?></h2>
@@ -47,7 +47,7 @@
 
     <footer>
         <p align="left">©2023 JINO SKI RESORTS</p>
-        <a algin="right" href = "logout.php"> Logout</a>
+        <a href = "logout.php"> <p align="right">LOGOUT</p></a>
     </footer>
 
     <script>
@@ -67,5 +67,4 @@
             exit();
     }
     ?>
-
 
