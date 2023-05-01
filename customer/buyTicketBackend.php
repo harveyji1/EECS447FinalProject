@@ -21,7 +21,7 @@
             </ul>
         </div>
     </nav>
-
+    <main>
 <?php
     session_start();
     
@@ -54,10 +54,10 @@
     $queryCheck = "SELECT * FROM TICKETS WHERE TICKETID = '$newTicketID'";
     $resultCheck = $mysqli->query($queryCheck);
     if($resultCheck->num_rows == 1){//FORMAT THIS PLEASE
-        echo "Purchase was Successful! Check your tickets on the My Tickets page!";
+        echo "<p>Purchase was Successful! Check your tickets on the My Tickets page!<p>";
     }
     else{
-        echo "Purchase was Unsuccessful, please try again. If problem persists, please contact Customer Support";
+        echo "<p>Purchase was Unsuccessful, please try again. If problem persists, please contact Customer Support<p>";
     }
     ?>
         
@@ -68,6 +68,7 @@
             exit();
  }
  ?>
+    </main>
      </body>
      
         <footer>
