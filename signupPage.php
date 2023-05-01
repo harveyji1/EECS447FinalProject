@@ -10,7 +10,7 @@
 		<form name="store" method="POST" action="signup.php">
 			<h1>JINO SKI RESORTS SIGN UP</h1></br>
 			<?php if(isset($_GET['error'])){ ?>
-			    <p class = "error"> <?php echo $_GET['error']; ?></p>
+			    <p class = "error"> <?php echo $_GET['error']; ?></p> <!--this is the error class-->
 			    <?php } ?></br>
 			    
 			<label for="fullName"><b>FIRST AND LAST NAME*</b></label>
