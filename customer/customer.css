@@ -111,7 +111,19 @@ footer {
     padding: 20px;
     position: relative;
     margin-top: auto;
+    justify-content: space-between;
+    display: flex;
 }
+
+footer a{
+    margin-left: auto;
+    color: #fff;
+    position: relative;
+    margin-top: auto;
+    text-align: center;
+    justify-content: space-between;
+ }
+
 
 .table-container{
     max-height: calc(100vh - 230 px);
@@ -315,6 +327,91 @@ footer {
         cursor: pointer;
         width: 100%;
     }
+
+    /* RESORTS */
+    .resort-container {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      width: 100%;
+    }
+
+    .resort {
+      display: flex;
+      flex-direction: row;
+      align-items: left;
+      justify-content: left;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .resort img {
+      width: 300px;
+      height: 200px;
+      margin-right: 20px;
+    }
+
+    .resort-info h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .resort-info p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .lifts {
+      margin-left: 50px;
+    }
+
+    .lifts h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .lifts ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .lifts li {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+
+/* MyLifts */
+.table-container {
+   margin-bottom: 60px;
+ }
+  table {
+   border-collapse: collapse;
+   width: 100%;
+ }
+  thead {
+   background-color: #46a3ef;
+ }
+  th,
+ td {
+   border: 1px solid #2d74ad;
+   padding: 8px;
+   text-align: left;
+ }
+  th {
+   font-weight: bold;
+ }
+  tr:nth-child(even) {
+   background-color: #bcd9f1;
+ }
+  /* Other styles */
+  .error-message {
+   color: red;
+   font-size: 18px;
+   margin-top: 40px;
+ }
+
   
 
 /* Media Queries */
