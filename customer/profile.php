@@ -47,7 +47,7 @@
 
     <footer>
         <p align="left">©2023 JINO SKI RESORTS</p>
-        <a href = "logout.php"> <p align="right">LOGOUT</p></a>
+        <a href = "logout.php"> <p align="right">LOGOUT</p></a> <!--This needs formatting-->
     </footer>
 
     <script>
