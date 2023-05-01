@@ -16,17 +16,22 @@
 <body>
     <nav>
         <div class="container">
-            <a href="#" class="logo">JINO SKI RESORTS</a>
+            <a href="customerFrontEnd.php" class="logo">JINO SKI RESORTS</a>
 
             <div class="menu-toggle">&#9776;</div>
 
             <ul>
                 <li><a href= "myTickets.php">MY TICKETS</a></li>
                 <li><a href="buyTickets.php">BUY TICKETS</a></li>
-                <li><a href="#">RESORTS</a></li>
+                <li><a href="resortsPage.php">RESORTS</a></li>
                 <li><a href="myLifts.php">MY LIFTS</a></li>
-                <li id="profile" style="display: none;"><a href="profile.php">PROFILE</a></li>
+                <?php if ($loggedIn){?>
+                <li id="profile"><a href="profile.php">PROFILE</a></li>
+                <?php
+                    }
+                    else{ ?>
                 <li><a href="../customerLoginPage.php">SIGN IN</a></li>
+                <?php } ?>
             </ul>
         </div>
     </nav>
@@ -109,7 +114,7 @@
         <p align="left">©2023 JINO SKI RESORTS</p>
     </footer>
 
-    <script>
+    <!--<script>
         const menuToggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('nav ul');
         const signinLink = document.querySelector('nav ul li:nth-child(6) a');
@@ -126,7 +131,7 @@
         <?php if($loggedIn){?>
             profileLink.style.display = 'inline';
             signinLink.style.display = 'none';<?php
-        }?>
-    </script>
+        }?> 
+    </script>-->
 </body>
 </html>
