@@ -1,7 +1,13 @@
+<?php
+session_start();
+session_unset();
+session_destroy();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Customer Login Page</title>
+	<title>Employee Login Page</title>
 	<!--<script src="formChecker.js"></script>-->
 	<link rel="stylesheet" href="style.css">
 </head>
