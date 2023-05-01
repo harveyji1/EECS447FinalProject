@@ -11,7 +11,7 @@ $email = $_POST["email"];
 $queryEmail = "SELECT * FROM SKIER WHERE EMAIL='$email'";
 $resultEmail = $mysqli->query($queryEmail);
 
-if ($resultEmail->num_rows > 0) { //FORMAT THIS PLEASE
+if ($resultEmail->num_rows > 0) { //FORMAT THIS PLEASE, like the make 
 header("Location: signupPage.php?error=Email already being used");
 }
 else{
