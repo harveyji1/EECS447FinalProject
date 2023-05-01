@@ -22,7 +22,7 @@
 			<button type="submit" id="subButton" value="Submit">SIGN IN</button>
 			</br></br></br><button type="signupRedirect" id = "signup" onclick="location.href='signupPage.php';">CLICK HERE TO SIGN UP</button>
 			</br><button type="employeeRedirect" id = "employeelogin" onclick="location.href='employeeLoginPage.php';">CLICK HERE FOR EMPLOYEE LOGIN</button>
-			</br><button type="signupRedirect" id = "homePage" onclick="location.href='customer/customerFrontend.php';">CLICK HERE TO CONTINUE WITHOUT SIGNING IN</button>
+			</br><button type="signupRedirect" id = "homePage" onclick="location.href='customer/customerFrontend.php';">CLICK HERE TO CONTINUE WITHOUT SIGNING IN</button> <!--FORMAT THIS BUTTON PLEASE, different color>
 		</form>
 	</div>
 </body>
